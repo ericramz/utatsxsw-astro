@@ -1,81 +1,58 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import SeeYouThere from '../components/see-you-there.astro';
+
+const { title } = Astro.props;
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={title}>
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+		<section class="mb-[-1.5px] block bg-burntorange">
+			<div class="m-auto my-12 mx-1">
+			  <img
+				class="m-auto md:order-2 md:col-span-6 xl:max-w-md"
+				src="/images/tower.svg"
+				alt="UT Tower"
+			  />
+			</div>
+	  
+			<div class="m-9 text-center font-eighteeneightythree text-2xl text-white">
+			  <p>UT at SXSW</p>
+			  <p>March 11, 2023</p>
+			  <p>10 a.m. — 9 p.m.</p>
+			  <p>Banger's on Rainey St.</p>
+			</div>
+		</section>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+
+
+		<section class="bg-white">
+			<img
+				class="m-auto md:order-2 md:col-span-6 xl:max-w-md"
+				src="/images/burntorange-wave.svg"
+				alt="wave"
+			  />
+			<div class="container pb-20 md:grid md:grid-cols-12 lg:w-4/5">
+			  <p class="mx-auto p-9 text-center font-eighteeneightythree text-2xl text-burntorange md:col-span-12 md:mt-9 md:w-4/5 md:text-3xl">
+				As Austin's hub for tech and creativity, The University of Texas at
+				Austin is leading the way in innovation. We're excited to show you
+				how. With impactful panel sessions, a networking space, KUTX
+				recordings, live music and a Burnt Orange Bash &mdash; we're bringing
+				the Longhorn spirit to SXSW.
+			  </p>
+			  <p class="col-span-12 mt-4 text-center font-eighteeneightythreeitalics text-xl text-charcoal">
+				Entry to this event is available to SXSW<br><br> badge holders and
+				invited guests.
+			  </p>
+			</div>
+		  </section>
+		  <SeeYouThere
+      date="March 11, 2023"
+      time="10 a.m. — 9 p.m."
+      headline="See You There!"
+      blurb="#UTatSXSW"
+    />
+
+	</main>
+
+</Layout>

@@ -1,0 +1,23 @@
+---
+const { date, time, headline, blurb } = Astro.props;
+---
+<section class="relative -z-50 bg-limestone-light bg-c1 bg-cover">
+    
+      <div class="container grid w-5/6 grid-cols-12 lg:max-w-4xl">
+        <div class="col-span-12 my-24 bg-burntorange py-9 px-2 md:py-16">
+            <img src="/images/sxsw-hookem.svg" class="w-1/12 mx-auto pb-3" />
+          <p class="text-center font-eighteeneightythree text-2xl text-white md:text-3xl">
+            {date}
+          </p>
+          <p class="text-center font-eighteeneightythree text-2xl text-white md:text-3xl">
+            {time}
+          </p>
+          <h1 class="my-4 text-center font-enzo text-4xl uppercase text-white md:text-7xl">
+            {headline}
+          </h1>
+          <p class="text-center font-eighteeneightythree text-xl text-white md:text-2xl">
+            {blurb}
+          </p>
+        </div>
+      </div>
+  </section>
