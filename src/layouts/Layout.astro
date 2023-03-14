@@ -8,6 +8,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+const siteTitle = 'Discover Texas at SXSW';
 ---
 
 <!DOCTYPE html>
@@ -17,9 +18,9 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title} | Discover Texas at SXSW</title>
+		<title>{title} | {siteTitle}</title>
 	</head>
-	<body class="mx-auto">
+	<body>
 		<Navigation />
 		<slot />
 		<Footer />

@@ -11,5 +11,3 @@ export default defineConfig({
     image()
   ]
 })
-
-import "./src/styles/global.css"
