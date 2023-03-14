@@ -4,7 +4,12 @@ import image from "@astrojs/image"
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), image()]
+  integrations: [
+    tailwind({
+      config: { applyBaseStyles: false }
+    }),
+    image()
+  ]
 })
 
 import "./src/styles/global.css"
