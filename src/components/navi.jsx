@@ -37,7 +37,7 @@ const Navi = () => {
               <li className="">
                 <a className="block pt-3 pr-3 pb-3 pl-6 text-burntorange transition-colors hover:bg-burntorange-dark hover:text-white hover:no-underline" href="/my-kutx">
                   My KUTX Live
-                  <svg class="mb-1 ml-1 inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                  <svg class="mb-1  inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
                     <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                   </svg>
                 </a>
@@ -48,7 +48,7 @@ const Navi = () => {
                   <li>
                     <a className="block py-1.5 pl-9 text-burntorange transition-colors hover:bg-burntorange-dark hover:text-white hover:no-underline" href="/discovery-to-impact">
                       Discovery to Impact
-                      <svg class="mb-1 ml-1 inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                      <svg class="mb-1  inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
                         <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                       </svg>
                     </a>
@@ -56,7 +56,7 @@ const Navi = () => {
                   <li>
                     <a className="block py-1.5 pr-9 pl-9 text-burntorange transition-colors hover:bg-burntorange-dark hover:text-white hover:no-underline" href="/name-image-likeness">
                       Name, Image, Likeness (NIL)
-                      <svg class="mb-1 ml-1 inline-block fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                      <svg class="mb-1  inline-block fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
                         <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                       </svg>
                     </a>
@@ -64,7 +64,7 @@ const Navi = () => {
                   <li>
                     <a className="block py-1.5 pl-9 text-burntorange transition-colors hover:bg-burntorange-dark hover:text-white hover:no-underline" href="/fireside-chat">
                       Fireside Chat
-                      <svg class="mb-1 ml-1 inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                      <svg class="mb-1  inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
                         <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                       </svg>
                     </a>
@@ -74,7 +74,7 @@ const Navi = () => {
               <li>
                 <a className="block pt-3 pr-3 pb-3 pl-6 text-burntorange transition-colors hover:bg-burntorange-dark hover:text-white hover:no-underline" href="/burnt-orange-bash">
                   Burnt Orange Bash
-                  <svg class="mb-1 ml-1 inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                  <svg class="mb-1  inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
                     <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                   </svg>
                 </a>
@@ -101,7 +101,7 @@ const Navi = () => {
               <li>
                 <a className="block pt-3 pr-3 pb-3 pl-3 text-burntorange transition-colors hover:bg-burntorange-dark hover:text-white hover:no-underline" href="/sessions-edu">
                   All UT SXSW EDU Sessions
-                  <svg class="mb-1 ml-1 inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                  <svg class="mb-1  inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
                     <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                   </svg>
                 </a>
@@ -109,7 +109,7 @@ const Navi = () => {
               <li>
                 <a className="block pt-3 pr-3 pb-3 pl-3 text-burntorange transition-colors hover:bg-burntorange-dark hover:text-white hover:no-underline" href="/sessions">
                   All UT SXSW Sessions
-                  <svg class="mb-1 ml-1 inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                  <svg class="mb-1  inline fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
                     <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                   </svg>
                 </a>
