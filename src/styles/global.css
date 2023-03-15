@@ -35,52 +35,6 @@ a:hover {
   @apply underline;
 }
 
-ul.menu li a {
-  @apply w-full;
-  @apply !rounded-none;
-  @apply font-eighteeneightythree;
-  @apply hover:!no-underline;
-  @apply gap-0;
-  @apply transition-colors;
-  @apply text-base;
-  @apply cursor-pointer;
-  @apply self-center;
-  @apply whitespace-nowrap;
-  @apply py-3;
-  @apply px-4;
-  @apply uppercase;
-  @apply text-white;
-  @apply lg:text-lg;
-}
-
-ul.menu li ul li a {
-  @apply !rounded-none;
-  @apply bg-white;
-  @apply text-burntorange;
-  @apply hover:bg-burntorange-dark;
-  @apply hover:text-white;
-  @apply capitalize;
-  @apply lg:text-base;
-}
-
-ul.menu li ul li ul {
-  @apply !rounded-none;
-  @apply bg-white;
-  @apply pl-0;
-}
-
-ul.menu li ul li ul li a {
-  @apply py-2;
-  @apply pl-6;
-}
-
-ul.menu li p {
-  @apply text-charcoal;
-  @apply bg-limestone-light;
-  @apply p-3;
-  @apply uppercase;
-}
-
 @tailwind components;
 @tailwind utilities;
 
