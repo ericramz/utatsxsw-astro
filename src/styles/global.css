@@ -36,6 +36,7 @@ a:hover {
 }
 
 ul.menu li a {
+  @apply w-full;
   @apply !rounded-none;
   @apply font-eighteeneightythree;
   @apply hover:!no-underline;

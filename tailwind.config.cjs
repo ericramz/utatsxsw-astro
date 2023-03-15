@@ -7,7 +7,11 @@ module.exports = {
         22: "5.5rem"
       },
       backgroundImage: {
-        c1: "url('/images/utsxsw-pattern-C1.png')"
+        c1: "url('/images/utsxsw-pattern-C1.png')",
+        c2: "url('/images/utsxsw-pattern-C2.png')",
+        c3: "url('/images/utsxsw-pattern-C3.png')",
+        b1: "url('/images/utsxsw-pattern-B1.png')",
+        b2: "url('/images/utsxsw-pattern-B2.png')"
       }
     },
     container: {
@@ -39,5 +43,8 @@ module.exports = {
       enzo: ["ff-enzo-web", "sans-serif"]
     }
   },
-  plugins: [require("daisyui", "prettier-plugin-tailwindcss")]
+  plugins: [require("daisyui", "prettier-plugin-tailwindcss")],
+  daisyui: {
+    styled: false
+  }
 }

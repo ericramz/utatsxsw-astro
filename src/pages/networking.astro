@@ -1,43 +1,161 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import NetworkingCard from "../components/networking-card.astro"
-import Tabs from "../components/tabs.svelte"
+import PageContentHeader from "../components/page-content-header.astro";
 ---
 
 <Layout title="Networking with UT Startups">
-  <main class="bg-white">
+  <main class="bg-white text-charcoal">
+
+    <PageContentHeader light={true} image="/images/sxsw-hookem.svg" headline="Networking with UT Startups" />
+    
     <section class="pt-12 pb-1">
-      <div class="container mt-5 px-5 text-charcoal lg:w-4/5 lg:max-w-5xl lg:justify-items-center xl:w-3/5">
+      <div class="container mt-5 text-charcoal lg:w-4/5 lg:max-w-5xl lg:justify-items-center xl:w-3/5">
         <p class="mt-3 mb-9 font-eighteeneightythree text-2xl">Part of what puts UT on track to be the highest impact public university in the world is our faculty and student entrepreneurs. Their services and inventions cross almost every industry, and they are all raising capital or looking to build a team to bring their technologies to market. Get to know tomorrow’s game-changers today. And remember, you saw ’em here first.</p>
         <p class="mt-3 mb-9 font-eighteeneightythree text-2xl">Want to keep talking to a UT startup after SXSW? <a class="text-burntorange" href="mailto:businessdevelopment@discoveries.utexas.edu">Email us.</a> We can help.</p>
       </div>
     </section>
 
-    <section class="container">
-      <div class="tabs">
-        <a class="tab-bordered tab tab-active">12 – 2:00 P.M.</a>
-        <a class="tab-bordered tab">2 – 4:00 P.M.</a>
+    <section class="container hidden px-1 lg:w-4/5 lg:max-w-5xl xl:w-3/5">
+      <div role="tablist" aria-label="tabs" class="flex flex-wrap border-b border-[#000] transition">
+        <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0" class="tab relative h-16 w-1/2 border-b-8 border-utorange px-6 text-2xl font-bold uppercase text-burntorange hover:underline"> 12 – 2:00 P.M.</button>
+        <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1" class="tab relative h-16 w-1/2 border-b-8 border-transparent px-6 text-2xl font-bold uppercase text-charcoal hover:underline"> 2 – 4:00 P.M.</button>
+      </div>
+      <div class="relative mt-6">
+        <div role="tabpanel" id="panel-1" class="tab-panel transition duration-300">
+          <p class="self-center text-center font-eighteeneightythreeblack text-3xl text-charcoal-dark">Computing Sciences and Physical Sciences</p>
+        </div>
+        <div role="tabpanel" id="panel-2" class="tab-panel invisible absolute top-0 opacity-0 transition duration-300">
+          <p class="self-center text-center font-eighteeneightythreeblack text-3xl text-charcoal-dark">Life Sciences and Consumer Goods</p>
+
+          <NetworkingCard startup="Faculty Startup" name="BioBQ" link="https://www.biobqing.com/" blurb="Produces beef brisket and other whole cuts of meat by growing cells from cattle in a clean production process instead of from slaughter." />
+
+          <NetworkingCard startup="Faculty Startup" name="ClearCam" link="https://www.clearcam-med.com/" blurb="Surgeons have obstructed vision 44% of the time. We make a windshield wiper to keep their vision clear 99% of the time. Available now." />
+
+          <NetworkingCard startup="Faculty Startup" name="Jurata Thin Film" link="https://juratatf.com/" blurb="Jurata’s thin film technology stabilizes vaccines and biologics at ambient temperature, increasing equitable access to lifesaving therapies." />
+
+          <NetworkingCard startup="Student Startup" name="Gazelle Ecosolutions" link="https://www.thegazelle.co/" blurb="Gazelle is a Shell- and Chevron-backed startup that sprung out of UT Austin’s Digital Landscapes Lab, which helps ranchers optimally stock their land while rewarding them through carbon credits. We started off tackling the massive problem of overgrazing-driven desertification in Africa’s grasslands by developing a free, offline mobile app to calculate carrying capacity and carbon sequestration and setting up carbon offset projects to reward ranchers for the protection of healthy soils." />
+
+          <NetworkingCard startup="Student Startup" name="Longhorn Life Sciences" link="https://longhornlifesciences.com/" blurb="Longhorn Life Sciences is a MedTech company developing needs-driven solutions to improve patient experience and outcomes. Our technology, the “Infection Detective,” will enable early and objective detection of postoperative surgical site infections. Objective early detection of surgical infections is a major clinical need, and the potential to intervene with low-cost, non-invasive treatments will lead to disruption of the healthcare space and result in improved patient outcomes and increased hospital revenue." />
+
+          <NetworkingCard startup="Student Startup" name="Outmore Living" link="https://outmoreliving.com/" blurb="Outmore Living is reimagining the future of outdoor spaces by creating the world’s first battery-powered heated outdoor furniture." />
+
+          <NetworkingCard startup="Student Startup" name="Pickle System" link="https://www.picklesystem.com/" blurb="Pickle System provides standardized, evidence-based, animated video models to teach a large variety of daily living skills (i.e., intimate care, hygiene, domestic skills, community skills) to individuals with autism and developmental disabilities. We offer printable visual aids and data collection sheets. We are a hands-off resource for behavior analysts, special educators, occupational therapists, and parents and caregivers of individuals with disabilities. Our mission is to improve the lives of individuals with disabilities by teaching them skills that allows them to fully access their environment." />
+
+          <NetworkingCard startup="Student Startup" name="Retna Bio" link="https://retna.bio/" blurb="Retna Bio engineers nature’s sensors to accelerate high throughput screening workflows. We use transcription-factor based biosensors to transduce small molecule concentrations into fluorescent readouts." />
+
+          <NetworkingCard startup="Student Startup" name="Tomahawk Targets" link="https://www.tomahawktargetsatx.com/" blurb="Tomahawk Targets manufactures a variety of axe-throwing targets that ship across the US. We also offer a mobile axe-throwing trailer experience in Austin and surrounding cities." />
+
+          <NetworkingCard startup="Student Startup" name="Valor" link="https://www.youtube.com/watch?v=9sL2TMm7zD8" blurb="VALOR is an eye-tracking-based Virtual Reality application that provides ALS patients, such as my father, with autonomy in the form of novel experiences and immersive activities that they are unable to engage in physically." />
+        </div>
       </div>
     </section>
 
-    <NetworkingCard startup="Faculty Startup" name="Celadyne Technologies" link="https://www.celadynetech.com/" blurb="Accelerating industrial decarbonization with durable fuel cells and cheap green hydrogen. We solve the 50-year-old materials problem to unlock the potential of hydrogen." />
+    <section class="bg-white pb-12">
+      <div class="container px-5 text-charcoal lg:w-4/5 lg:max-w-5xl lg:justify-items-center xl:w-3/5">
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <ul role="tablist" aria-label="tabs" class="mb-0 flex list-none flex-row flex-wrap border-b pt-3">
+              <li class="-mb-px mr-2 flex-auto text-center last:mr-0">
+                <a role="tab" aria-selected="true" aria-controls="panel-1" id="panel-1" tabindex="0" class="tabs block cursor-pointer border-b-8 px-5 py-3 text-2xl font-bold uppercase leading-normal border-utorange text-burntorange"> 12 – 2:00 p.m.</a>
+              </li>
+              <li class="-mb-px mr-2 flex-auto text-center last:mr-0">
+                <a role="tab" aria-selected="false" aria-controls="panel-2" id="panel-2" tabindex="-1" class="tabs block cursor-pointer border-b-8 border-transparent px-5 py-3 text-2xl font-bold uppercase leading-normal text-charcoal"> 2 – 4:00 p.m.</a>
+              </li>
+            </ul>
+            <div class="relative mb-6 flex w-full min-w-0 flex-col break-words">
+              <div class="flex-auto py-5">
+                <div class="tab-content tab-space">
+                  <div role="tabpanel" id="panel-1" class="tab-panel block">
+                    <section class="bg-white pb-12">
+                      <div class="text-charcoal lg:max-w-5xl lg:justify-items-center">
+                        <p class="self-center text-center font-eighteeneightythreeblack text-3xl">Computing Sciences and Physical Sciences</p>
+                        <NetworkingCard startup="Faculty Startup" name="Celadyne Technologies" link="https://www.celadynetech.com/" blurb="Accelerating industrial decarbonization with durable fuel cells and cheap green hydrogen. We solve the 50-year-old materials problem to unlock the potential of hydrogen." />
 
-    <NetworkingCard startup="Faculty Startup" name="ClioVis" link="https://cliovis.com/" blurb="ClioVis is mind-mapping, timeline, and presentation software ideally suited for understanding and illustrating change over time." />
+                        <NetworkingCard startup="Faculty Startup" name="ClioVis" link="https://cliovis.com/" blurb="ClioVis is mind-mapping, timeline, and presentation software ideally suited for understanding and illustrating change over time." />
 
-    <NetworkingCard startup="Faculty Startup" name="La Luce Cristallina" link="https://lalucecristallina.com/" blurb="Providing the next generation of high-performance photonic wafers for wholesale, R&D, and prototyping for consumer and defense applications." />
+                        <NetworkingCard startup="Faculty Startup" name="La Luce Cristallina" link="https://lalucecristallina.com/" blurb="Providing the next generation of high-performance photonic wafers for wholesale, R&D, and prototyping for consumer and defense applications." />
 
-    <NetworkingCard startup="Faculty Startup" name="Lantha Sensors" link="https://www.lanthasensors.com/" blurb="Chemical analysis company bringing portable, cost-effective platforms to market, enabling rapid, reliable and accurate field-based testing." />
+                        <NetworkingCard startup="Faculty Startup" name="Lantha Sensors" link="https://www.lanthasensors.com/" blurb="Chemical analysis company bringing portable, cost-effective platforms to market, enabling rapid, reliable and accurate field-based testing." />
 
-    <NetworkingCard startup="Faculty Startup" name="Multi AI" link="https://www.multi.ai/" blurb="Provides next-generation AI for large volumes of vehicles, such as drones, satellites, and ground vehicles, to operate fully autonomously." />
+                        <NetworkingCard startup="Faculty Startup" name="Multi AI" link="https://www.multi.ai/" blurb="Provides next-generation AI for large volumes of vehicles, such as drones, satellites, and ground vehicles, to operate fully autonomously." />
 
-    <NetworkingCard startup="Faculty Startup" name="Pike Robotics" link="https://www.pikerobotics.com/" blurb="Pike Robotics makes inspections of oil & gas storage tanks safer, more accurate, and less costly, helping to reduce greenhouse gas emissions." />
+                        <NetworkingCard startup="Faculty Startup" name="Pike Robotics" link="https://www.pikerobotics.com/" blurb="Pike Robotics makes inspections of oil & gas storage tanks safer, more accurate, and less costly, helping to reduce greenhouse gas emissions." />
 
-    <NetworkingCard startup="Faculty Startup" name="TAU Systems" link="https://www.tausystems.com/" blurb="Compact, room-sized particle accelerators and x-ray lasers for semi-conductors, material science and rational drug design / life sciences." />
+                        <NetworkingCard startup="Faculty Startup" name="TAU Systems" link="https://www.tausystems.com/" blurb="Compact, room-sized particle accelerators and x-ray lasers for semi-conductors, material science and rational drug design / life sciences." />
 
-    <NetworkingCard startup="Student Startup" name="hifive" link="http://hifivecommunity.com/" blurb="Enabling service employees to earn recognition and contactless tips." />
+                        <NetworkingCard startup="Student Startup" name="hifive" link="http://hifivecommunity.com/" blurb="Enabling service employees to earn recognition and contactless tips." />
 
-    <NetworkingCard startup="Student Startup" name="Paradigm Robotics" link="https://www.thefirebot.com/" blurb="Paradigm Robotics is developing the next generation of advanced and accessible robotic solutions to mitigate risks and solve problems for firefighters and civil workers in dangerous environments." />
+                        <NetworkingCard startup="Student Startup" name="Paradigm Robotics" link="https://www.thefirebot.com/" blurb="Paradigm Robotics is developing the next generation of advanced and accessible robotic solutions to mitigate risks and solve problems for firefighters and civil workers in dangerous environments." />
 
-    <NetworkingCard startup="Student Startup" name="STEM Muse" link="https://www.stemmuse.com/" blurb="STEM Muse is the STEM mentorship network for women. We’re patching the leaky pipeline by connecting women in STEM higher education— undergraduate students, graduate students, postdoctoral associates, and research staff — with professionals more advanced in their academic and industry careers. Our mission is to increase the recruitment, retention, and ultimately, the success of women in STEM." />
+                        <NetworkingCard startup="Student Startup" name="STEM Muse" link="https://www.stemmuse.com/" blurb="STEM Muse is the STEM mentorship network for women. We’re patching the leaky pipeline by connecting women in STEM higher education— undergraduate students, graduate students, postdoctoral associates, and research staff — with professionals more advanced in their academic and industry careers. Our mission is to increase the recruitment, retention, and ultimately, the success of women in STEM." />
+                      </div>
+                    </section>
+                  </div>
+                  <div role="tabpanel" id="panel-2" class="tab-panel hidden">
+                    <section class="bg-white pb-12">
+                      <div class="text-charcoal lg:max-w-5xl lg:justify-items-center">
+                        <p class="self-center text-center font-eighteeneightythreeblack text-3xl">Life Sciences and Consumer Goods</p>
+                        <NetworkingCard startup="Faculty Startup" name="BioBQ" link="https://www.biobqing.com/" blurb="Produces beef brisket and other whole cuts of meat by growing cells from cattle in a clean production process instead of from slaughter." />
+
+                        <NetworkingCard startup="Faculty Startup" name="ClearCam" link="https://www.clearcam-med.com/" blurb="Surgeons have obstructed vision 44% of the time. We make a windshield wiper to keep their vision clear 99% of the time. Available now." />
+
+                        <NetworkingCard startup="Faculty Startup" name="Jurata Thin Film" link="https://juratatf.com/" blurb="Jurata’s thin film technology stabilizes vaccines and biologics at ambient temperature, increasing equitable access to lifesaving therapies." />
+
+                        <NetworkingCard startup="Student Startup" name="Gazelle Ecosolutions" link="https://www.thegazelle.co/" blurb="Gazelle is a Shell- and Chevron-backed startup that sprung out of UT Austin’s Digital Landscapes Lab, which helps ranchers optimally stock their land while rewarding them through carbon credits. We started off tackling the massive problem of overgrazing-driven desertification in Africa’s grasslands by developing a free, offline mobile app to calculate carrying capacity and carbon sequestration and setting up carbon offset projects to reward ranchers for the protection of healthy soils." />
+
+                        <NetworkingCard startup="Student Startup" name="Longhorn Life Sciences" link="https://longhornlifesciences.com/" blurb="Longhorn Life Sciences is a MedTech company developing needs-driven solutions to improve patient experience and outcomes. Our technology, the “Infection Detective,” will enable early and objective detection of postoperative surgical site infections. Objective early detection of surgical infections is a major clinical need, and the potential to intervene with low-cost, non-invasive treatments will lead to disruption of the healthcare space and result in improved patient outcomes and increased hospital revenue." />
+
+                        <NetworkingCard startup="Student Startup" name="Outmore Living" link="https://outmoreliving.com/" blurb="Outmore Living is reimagining the future of outdoor spaces by creating the world’s first battery-powered heated outdoor furniture." />
+
+                        <NetworkingCard startup="Student Startup" name="Pickle System" link="https://www.picklesystem.com/" blurb="Pickle System provides standardized, evidence-based, animated video models to teach a large variety of daily living skills (i.e., intimate care, hygiene, domestic skills, community skills) to individuals with autism and developmental disabilities. We offer printable visual aids and data collection sheets. We are a hands-off resource for behavior analysts, special educators, occupational therapists, and parents and caregivers of individuals with disabilities. Our mission is to improve the lives of individuals with disabilities by teaching them skills that allows them to fully access their environment." />
+
+                        <NetworkingCard startup="Student Startup" name="Retna Bio" link="https://retna.bio/" blurb="Retna Bio engineers nature’s sensors to accelerate high throughput screening workflows. We use transcription-factor based biosensors to transduce small molecule concentrations into fluorescent readouts." />
+
+                        <NetworkingCard startup="Student Startup" name="Tomahawk Targets" link="https://www.tomahawktargetsatx.com/" blurb="Tomahawk Targets manufactures a variety of axe-throwing targets that ship across the US. We also offer a mobile axe-throwing trailer experience in Austin and surrounding cities." />
+
+                        <NetworkingCard startup="Student Startup" name="Valor" link="https://www.youtube.com/watch?v=9sL2TMm7zD8" blurb="VALOR is an eye-tracking-based Virtual Reality application that provides ALS patients, such as my father, with autonomy in the form of novel experiences and immersive activities that they are unable to engage in physically." />
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let tabs = document.querySelectorAll(".tabs")
+      let panels = document.querySelectorAll(".tab-panel")
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          let tabTarget = tab.getAttribute("aria-controls")
+
+          panels.forEach(panel => {
+            let panelId = panel.getAttribute("id")
+            if (tabTarget === panelId) {
+              panel.classList.remove("hidden")
+              panel.classList.add("block")
+            } else {
+              panel.classList.add("hidden")
+            }
+          })
+          tabs.forEach(tab => {
+            let tabsId = tab.getAttribute("id")
+            if (tabTarget === tabsId) {
+              tab.classList.remove("!border-transparent", "text-charcoal")
+              tab.classList.add("border-utorange", "text-burntorange")
+            } else {
+              tab.classList.add("!border-transparent", "text-charcoal")
+            }
+          })
+        })
+      })
+
+      
+    </script>
   </main>
 </Layout>
