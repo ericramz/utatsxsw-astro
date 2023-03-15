@@ -6,6 +6,7 @@ import SeeYouThere from '../components/see-you-there.astro';
 <Layout title="Home">
 	<main>
 		<section class="mb-[-1.5px] block bg-burntorange pb-1">
+		
 			<div class="m-auto my-12 mx-1">
 			  <img
 				class="m-auto md:order-2 md:col-span-6 xl:max-w-md"
@@ -22,14 +23,19 @@ import SeeYouThere from '../components/see-you-there.astro';
 			</div>
 		</section>
 
+		
+
 
 
 		<section class="bg-white">
-			<img
-				class="m-auto md:order-2 md:col-span-12"
+			
+			  <div class="relative pb-10">
+				<img
+				class="w-full absolute"
 				src="/images/burntorange-wave.svg"
 				alt="wave"
 			  />
+				<div class="absolute -top-px h-[2px] w-full bg-burntorange"></div>
 			<div class="container pb-20 md:grid md:grid-cols-12 lg:w-4/5">
 			  <p class="mx-auto p-9 text-center font-eighteeneightythree text-2xl text-burntorange md:col-span-12 md:mt-9 md:w-4/5 md:text-3xl">
 				As Austin's hub for tech and creativity, The University of Texas at
