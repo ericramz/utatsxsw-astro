@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro"
+import ProfileCard from "../components/profile-card.astro"
+import PageContentHeader from "../components/page-content-header.astro"
+---
+
+<Layout title="Fireside Chat">
+  <main class="bg-white text-charcoal">
+    <PageContentHeader light={true} intro="Fireside Chat:" headline="Building a Hub of Academic and Business Innovation" />
+
+    <section class="py-12">
+      <div class="container mt-5 text-charcoal lg:w-4/5 lg:max-w-5xl lg:justify-items-center xl:w-3/5">
+        <p class="font-eighteeneightythreebold text-4xl">March 11, 2023, 4–5 p.m.</p>
+        <p class="my-3 font-eighteeneightythree text-2xl">From Silicon Valley to Cambridge, the highest impact universities are intertwined with strong entrepreneurial and investor communities. In Austin, we have the key ingredients, and we are setting the table for the next wave of impact. This discussion between University of Texas at Austin President Jay Hartzell and venture capitalist Jim Breyer will explore the opportunities unique to this moment and location and outline a framework for seizing them.</p>
+        <div class="mx-auto mt-9 w-full flex-col md:grid md:w-3/4 md:grid-cols-2 lg:w-1/2">
+          <p class="font-eighteeneightythree text-xl uppercase md:pt-1">With Support From</p>
+          <img src="../images/Texas-Capital-Bank.svg" class="mt-3 block h-8 md:mt-0" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-limestone-light bg-c2 bg-cover bg-center bg-no-repeat opacity-95">
+      <div class="container grid w-4/5 grid-cols-12 lg:max-w-5xl lg:justify-items-center">
+        <ProfileCard image="../images/people/ut-sxsw-jim-breyer.png" name="Jim Breyer" company="Breyer Capital" bio="Jim Breyer is founder & CEO of Breyer Capital, a premier VC firm in Austin. He’s been an early investor in tech companies that have completed successful public offerings or mergers, many of which, like Facebook, having returned well over 100x their cost." />
+        <ProfileCard image="../images/people/ut-sxsw-jay-hartzell.png" name="Jay Hartzell" company="The University of Texas at Austin" bio="As UT’s 30th president, Jay Hartzell has launched a 10-year strategic plan to make UT the world’s highest-impact public research university, amplifying both its service to campus and its ability to address society’s greatest challenges." />
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,18 @@
+---
+const { name, image, company, bio } = Astro.props
+---
+
+<div class="col-span-12 mt-16 mb-12 items-start bg-white lg:grid lg:grid-cols-12 lg:items-center">
+  <div class="lg:col-span-5">
+    <img src={image} alt={name} />
+  </div>
+  <div class="p-8 font-eighteeneightythree text-charcoal lg:col-span-7 xl:p-16">
+    <p class="my-3 font-eighteeneightythreeblack text-3xl lg:text-5xl">
+      {name}
+    </p>
+    <p class="my-3 text-2xl">{company}</p>
+    <p class="my-3">
+      {bio}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro"
+import ProfileCard from "../components/profile-card.astro"
+import PageContentHeader from "../components/page-content-header.astro"
+---
+
+<Layout title="Discovery to Impact">
+  <main class="bg-white text-charcoal">
+    <PageContentHeader light={true} intro="Discovery to Impact:" headline="The Future of Tech? It Looks a Lot Like Austin" />
+
+    <section class="py-12">
+      <div class="container mt-5 text-charcoal lg:w-4/5 lg:max-w-5xl lg:justify-items-center xl:w-3/5">
+        <p class="font-eighteeneightythreebold text-4xl">March 11, 2023, 1–2 p.m.</p>
+        <p class="my-3 font-eighteeneightythree text-2xl">Austin is a hotbed of innovation. From major global enterprises like Dell, Samsung, and AMD to one of the top entrepreneurship ecosystems in the world, some of the most bleeding-edge, deep-tech innovations start here. This panel discussion will bring together the perspectives of large and small businesses, investors, and innovators in technology areas core to the future of Austin and the United States: semiconductors, energy, life sciences, and space tech.</p>
+        <div class="mx-auto mt-9 w-full flex-col md:grid md:w-3/4 md:grid-cols-2 lg:w-1/2">
+          <p class="font-eighteeneightythree text-xl uppercase md:pt-1">With Support From</p>
+          <img src="../images/Dell-Technologies.svg" class="mt-3 block h-8 md:mt-0" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-limestone-light bg-c2 bg-cover bg-center bg-no-repeat opacity-95">
+      <div class="container grid w-4/5 grid-cols-12 lg:max-w-5xl lg:justify-items-center">
+        <ProfileCard image="../images/people/ut-sxsw-christine-dixon-thesing.png" name="Christine Dixon Thiesing" company="Moderator - Discovery to Impact, UT Austin" bio="Christine Dixon Thiesing is UT Austin’s Discovery to Impact AVP, overseeing a team of experts that brings products & services to market by connecting industry, investors, startups, and UT innovators. She has also worked at CuRE Innovations and the SCRA." />
+        <ProfileCard image="../images/people/ut-sxsw-cheryl-ingstad.png" name="Cheryl Ingstad" company="Department of Defense" bio="Cheryl Ingstad is the managing director of the National Security Innovation Network (NSIN), a DoD program office that collaborates with major universities and the venture community to develop solutions that drive national security innovation." />
+        <ProfileCard image="../images/people/ut-sxsw-juli-johnston.png" name="Juli Johnston" company="Tesla" bio="Juli Johnston leads energy procurement and incentive program implementation for Tesla’s global charging network. Previously, she was a Sr. Analyst on Tesla’s Policy Team, Deputy Director of Policy & Electricity Markets for SolarCity, and Analyst at MRW & Associates. Johnston holds degrees from UC Berkeley and UT." />
+        <ProfileCard image="../images/people/ut-sxsw-john-kozarich.png" name="John Kozarich" company="Cūrza" bio="John Kozarich is Chairman of Ligand (LGND) and adjunct professor at UT Austin’s College of Pharmacy. His 45-year career in drug discovery and development has spanned biotech, big pharma, and academia. He has a PhD in biological chemistry from MIT." />
+        <ProfileCard image="../images/people/ut-sxsw-john-schreck.png" name="John Schreck" company="Texas Institute for Electronics (TIE)" bio="John Schreck is a former Micron Technology SVP and is the newly named CEO of the Texas Institute for Electronics (TIE), a public-private consortium that accelerates innovations in advanced packaging and heterogenous integration." />
+      </div>
+    </section>
+  </main>
+</Layout>
