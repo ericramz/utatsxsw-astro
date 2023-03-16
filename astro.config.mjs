@@ -1,17 +1,17 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import image from "@astrojs/image";
-import react from "@astrojs/react";
-
-import netlify from "@astrojs/netlify/functions";
+import { defineConfig } from "astro/config"
+import tailwind from "@astrojs/tailwind"
+import image from "@astrojs/image"
+import react from "@astrojs/react"
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
-  integrations: [tailwind({
-    config: {
-      applyBaseStyles: false
-    }
-  }), image(), react()],
-  adapter: netlify()
-});
+  integrations: [
+    tailwind({
+      config: {
+        applyBaseStyles: false
+      }
+    }),
+    image(),
+    react()
+  ]
+})
