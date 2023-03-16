@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Card from "../components/Card.astro"
+
+const headers = { "Content-Type": "application/json" }
+
+const postData = await fetch(import.meta.env.WORDPRESS_URL, {
+  method: "post",
+  headers,
+  body: JSON.stringify({
+    query: `{
+              posts {
+                nodes {
+                  content
+                  title
+                  excerpt
+                  slug
+                }
+              }
+            }`
+  })
+}).then(data => data.json())
+
+const posts = postData?.data?.posts?.nodes
+---
+
+<Layout title="Home">
+  <main>
+    <div class="container">
+      {posts.map(post => <Card href={post.slug} title={post.title} body={post.excerpt} />)}
+    </div>
+  </main>
+</Layout>

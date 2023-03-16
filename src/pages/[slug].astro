@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Card from "../components/Card.astro"
+
+const headers = { "Content-Type": "application/json" }
+const slug = Astro.params.slug
+const postData = await fetch(import.meta.env.WORDPRESS_URL, {
+  method: "post",
+  headers,
+  body: JSON.stringify({
+    query: `{
+                post(idType: SLUG, id: "${slug}") {
+                    content
+                    date
+                    title
+                    id
+                    databaseId
+                    slug
+                    uri
+                }
+            }`
+  })
+}).then(data => data.json())
+
+const post = postData?.data?.post
+---
+
+<Layout title="Home">
+  <main class="bg-white py-10">
+    <div class="container">
+      <h1 class="text-5xl">{post.title}</h1>
+      <time>{new Date(post.date).toLocaleString()}</time>
+      <article set:html={post.content} />
+    </div>
+  </main>
+</Layout>
