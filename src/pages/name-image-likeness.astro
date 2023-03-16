@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro"
+import ProfileCard from "../components/profile-card.astro"
+import PageContentHeader from "../components/page-content-header.astro"
+---
+
+<Layout title="Name, Image, Likeness (NIL)">
+  <main class="bg-white text-charcoal">
+    <PageContentHeader light={true} intro="Name, Image, Likeness (NIL):" headline="How Nil is Changing the Game for College Athletics" />
+
+    <section class="py-12">
+      <div class="container mt-5 text-charcoal lg:w-4/5 lg:max-w-5xl lg:justify-items-center xl:w-3/5">
+        <p class="font-eighteeneightythreebold text-4xl">March 11, 2023, 2:30-3:30 p.m.</p>
+        <p class="my-3 font-eighteeneightythree text-2xl">In the blink of an eye, Name, Image and Likeness (NIL) has dramatically changed the landscape for NCAA student athletes, institutions, and the ecosystem around them. What’s on the horizon? How should universities, collectives, and businesses better support and protect student-athletes? This expert panel will discuss the issues and what lies ahead.</p>
+        <div class="mx-auto mt-9 w-full flex-col md:grid md:w-3/4 md:grid-cols-2 lg:w-1/2">
+          <p class="font-eighteeneightythree text-xl uppercase md:pt-1">With Support From</p>
+          <img src="../images/UT-McCombs-School-of-Business.svg" class="mt-3 block h-8 md:mt-0" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-limestone-light bg-c2 bg-cover bg-center bg-no-repeat opacity-95">
+      <div class="container grid w-4/5 grid-cols-12 lg:max-w-5xl lg:justify-items-center">
+        <ProfileCard image="../images/people/ut-sxsw-roger-wallace.png" name="Roger Wallace" company="Moderator - KXAN" bio="Roger Wallace is a KXAN sports anchor and color analyst for the Longhorn Football Radio Network. He covered the ’02 and ’08 Olympic Games and was voted “Best Sportscaster” by the Texas Associated Press and Austin Chronicle." />
+        <ProfileCard image="../images/people/ut-sxsw-ricky-brown.png" name="Ricky Brown" company="Texas Athletics" bio="Rick Brown is Texas Athletics’ senior associate AD, overseeing DEI and student-athlete growth and education. As a student-athlete himself in the ’90s, Brown cleared the lanes for Ricky Williams as his blocking fullback. He holds an MBA from SMU." />
+        <ProfileCard image="../images/people/ut-sxsw-carol-capitani.png" name="Carol Capitani" company="Texas Women’s Swimming and Diving" bio="Carol Capitani is the head coach of the elite Texas Women’s Swimming and Diving program. She was recently selected by USA Swimming to lead the Women’s National Team at the 2023 World Championships in Japan." />
+        <ProfileCard image="../images/people/ut-sxsw-lisa-hannusch.png" name="Lisa Hannusch" company="Texas One Fund" bio="Lisa Hannusch is a UT alum, Austin native and board advisor supporting women’s sports to the Texas One Fund, which connects Texas college athletes with charitable causes, helping them cultivate NIL opportunities. As a former CEO, Lisa serves on several public, private and non-profit boards and is an enthusiastic Longhorn Foundation donor." />
+        <ProfileCard image="../images/people/ut-sxsw-blake-lawrence.png" name="Blake Lawrence" company="Opendorse" bio="Blake Lawrence is the founder and CEO of Opendorse, which serves the full lifecycle of supporting athletes: educating, assessing, planning, sharing, creating, measuring, tracking, disclosing, regulating, listing, browsing, booking, and more. Opendorse’s NIL solutions connect marketers and supporters with athletes while helping athletes understand, build, protect, and monetize their brand value. Prior founding Opendorse, Lawrence attended the University of Nebraska and played three seasons on the Cornhuskers football team, then earned his MBA." />
+      </div>
+    </section>
+  </main>
+</Layout>

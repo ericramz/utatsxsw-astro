@@ -1,0 +1,18 @@
+---
+const { name, image, bio, bioTwo } = Astro.props
+---
+
+<div class="mb-16">
+  <h3 class="my-3 font-eighteeneightythreeblack text-5xl">
+    {name}
+  </h3>
+  <div class="mt-3 mb-9 font-eighteeneightythree text-2xl">
+    <p>
+      {bio}
+    </p>
+    <p class="mt-6">
+      {bioTwo}
+    </p>
+  </div>
+  <img src={image} alt={name} />
+</div>

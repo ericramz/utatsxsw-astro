@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro"
+import ProfileCard from "../components/profile-card.astro"
+import PageContentHeader from "../components/page-content-header.astro"
+---
+
+<Layout title="My KUTX">
+  <main class="bg-white text-charcoal">
+    <PageContentHeader light={true} headline="My KUTX" />
+
+    <section class="py-12">
+      <div class="container mt-5 text-charcoal lg:w-4/5 lg:max-w-5xl lg:justify-items-center xl:w-3/5">
+        <p class="font-eighteeneightythreebold text-4xl">March 11, 2023, 10 — 11 a.m.</p>
+        <p class="my-3 font-eighteeneightythree text-2xl"><span class="uppercase">Hosted by Art Levy</span><br />Every week we invite our favorite musicians and music lovers to play whatever they want to play. We call it: My KUTX.</p>
+      </div>
+    </section>
+
+    <section class="bg-limestone-light bg-c2 bg-cover bg-center bg-no-repeat opacity-95">
+      <div class="container grid w-4/5 grid-cols-12 lg:max-w-5xl lg:justify-items-center">
+        <ProfileCard image="../images/people/ut-sxsw-tim-league-p.jpeg" name="Tim League" company="Alamo Drafthouse" bio="Tim League graduated from Rice University in 1992 with degrees in Mechanical Engineering and Art/Art History. After a two-year stint at Shell Oil in Bakersfield, California, Tim left the engineering profession and opened up his first movie theater, the Tejon Theater, in east Bakersfield. When that theater closed after a short run in 1995, he and his wife Karrie loaded a truck with 200 seats, a projector, screen, and speakers and headed to Austin, Texas. They founded Alamo Drafthouse in 1997, where as Executive Chairmain League remains committed to providing creative programming and a zero tolerance policy for disruption during the theater experience. League also co-founded Fantastic Fest, the largest genre film festival in the United States, and NEON, the newest powerhouse in US Film Distribution with titles such as COLOSSAL, I, TONYA, and PARASITE." />
+      </div>
+    </section>
+  </main>
+</Layout>

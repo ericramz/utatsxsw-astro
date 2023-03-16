@@ -1,28 +1,42 @@
 ---
-import Footer from '../components/footer.astro';
-import Navigation from '../components/navigation.astro';
-import '../styles/global.css';
+import Footer from "../components/footer.astro"
+import Navigation from "../components/navigation.astro"
+import "../styles/global.css"
 
 export interface Props {
-	title: string;
+  title: string
 }
 
-const { title } = Astro.props;
-const siteTitle = 'Discover Texas at SXSW';
+const { title } = Astro.props
+const siteTitle = "Discover Texas at SXSW"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title} | {siteTitle}</title>
-	</head>
-	<body>
-		<Navigation />
-		<slot />
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | {siteTitle}</title>
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : ""
+        j.async = true
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, "script", "dataLayer", "GTM-W2FKXC")
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <Navigation />
+    <slot />
+    <Footer />
+  </body>
 </html>

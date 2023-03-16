@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro"
+import BandCard from "../components/band-card.astro"
+import PageContentHeader from "../components/page-content-header.astro"
+---
+
+<Layout title="Burnt Orange Bash">
+  <main class="bg-white text-charcoal">
+    <PageContentHeader headline="Burnt Orange Bash" />
+
+    <section class="py-12">
+      <div class="container w-3/5 text-charcoal lg:max-w-5xl lg:justify-items-center">
+        <p class="font-eighteeneightythreebold text-4xl">March 11, 2023, 6–9 p.m.</p>
+        <BandCard image="../images/The-Selfless-Lovers.jpg" name="Nik Parr & The Selfless Lovers" bio="The Selfless Lovers are a piano-driven rock n’ roll band from Austin, Texas. The group’s original music draws on classic rock, soul, blues and southern rock influences. The Selfless Lovers are a must-see live act; showcasing an energized retro sound, fantastic musicianship and danceable original songs. The band’s singer even plays saxophone and piano at the same time during the set." bioTwo="The band has released 3 EP’s: Glad To Be Here (2017), The Selfless Lovers (2018), Live From Austin (2019) and debuted their full-length, twelve song album When The Bars Close in the Spring of 2021." />
+        <BandCard image="../images/utsxsw-lucius.jpg" name="Lucius" bio="Featuring a pair of Berklee College of Music voice majors in Jess Wolfe and Holly Laessig, who wear matching hairstyles and outfits to visually complement their serpentine harmonies, Lucius debuted their blend of torchy folk-rock and urban indie pop on a self-titled EP in 2012. The band’s first record to crack the top half of the Billboard 200 was their second full-length, 2016’s Good Grief, which looked to slicker, ‘80s-styled pop without abandoning acoustic balladry. They continued to experiment with a range of influences on albums such as the Brandi Carlile-co-produced Second Nature (2022)." />
+      </div>
+    </section>
+  </main>
+</Layout>

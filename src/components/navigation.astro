@@ -1,13 +1,13 @@
 ---
-import Navi from "../components/navi";
+import Navi from "../components/navi"
 ---
 
-<header class="sticky top-0 bg-burntorange z-50">
-  <nav class="container mx-auto navbar grid md:grid-flow-col">
-    <div class="mx-auto lg:ml-14">
-        <a href="/" class="w-96 md:w-48 lg:w-64"><img alt="UT at SXSW" class="w-100 py-4" src="/images/ut-brand-primary.svg" /></a>
+<header class="sticky top-0 z-50 bg-burntorange">
+  <nav class="container navbar mx-auto grid md:grid-flow-col">
+    <div class="mx-auto">
+      <a href="/" class="w-96 md:w-48 lg:w-64"><img alt="UT at SXSW" class="w-100 py-4" src="/images/ut-brand-primary.svg" /></a>
     </div>
-    
+
     <div class="grid"><Navi client:idle /></div>
   </nav>
 </header>
