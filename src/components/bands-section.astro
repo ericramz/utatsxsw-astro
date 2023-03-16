@@ -1,0 +1,42 @@
+---
+import { Icon } from "astro-icon"
+---
+
+<section class="bg-a bg-cover bg-center bg-no-repeat opacity-95">
+  <div class="container py-12 md:grid md:w-4/5 md:grid-cols-12 lg:w-3/5 lg:max-w-5xl">
+    <div class="flex flex-col content-center py-4 px-6 md:col-span-6">
+      <p class="font-eighteeneightythreebold text-xl text-white">6 — 9 p.m.</p>
+      <h3 class="mt-2 font-enzo text-4xl uppercase text-white md:text-5xl">Burnt Orange Bash</h3>
+      <p class="mt-4 font-eighteeneightythree text-2xl text-white">We’ll end the day with a Texas-sized celebration featuring Nik Parr &amp; The Selfless Lovers and special guest Lucius.</p>
+      <a href="/burnt-orange-bash" class="my-5 w-full cursor-pointer self-start bg-white py-2 text-center font-eighteeneightythree text-sm uppercase text-burntorange transition-colors hover:border-burntorange-dark hover:bg-burntorange-dark hover:text-white hover:no-underline md:px-1 lg:w-3/5 lg:text-lg">
+        Details<Icon class="mb-1 inline h-8 w-8 fill-current" name="mdi:chevron-right" />
+      </a>
+    </div>
+    <img class="m-auto md:col-span-6 md:w-[35vw] lg:w-[25vw]" src="../images/squiggle-hookem.gif" alt="Texas symbols" />
+  </div>
+
+  <section class="relative -z-50 my-16 bg-transparent">
+    <div class="container relative flex px-10">
+      <div class="hidden w-1/3 md:inline">
+        <img src="../images/The-Selfless-Lovers-sm.jpg" alt="Mariachi" class="h-full" />
+      </div>
+      <div class="relative w-full md:w-2/3">
+        <img src="../images/The-Selfless-Lovers-lg.jpg" alt="Mariachi" />
+        <div class="absolute left-0 bottom-0 m-3 bg-white px-6 py-2 lg:m-5 lg:py-3 lg:px-12 xl:px-16">
+          <h3 class="font-enzo text-xl text-utorange lg:text-3xl xl:text-4xl">Nik Parr &amp; The Selfless Lovers</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container flex px-10">
+      <div class="relative w-full pb-10 md:w-2/3 md:pb-0">
+        <img src="../images/Lucius-lg.png" alt="lucius" />
+        <div class="absolute right-0 top-0 m-3 bg-white px-6 py-2 lg:m-5 lg:py-3 lg:px-12 xl:px-16">
+          <h3 class="font-enzo text-xl text-utorange lg:text-3xl xl:text-4xl">Lucius</h3>
+        </div>
+      </div>
+      <div class="hidden w-1/3 overflow-hidden md:inline">
+        <img src="../images/utsxsw-lucius-tall.png" alt="lucius" class="h-full" />
+      </div>
+    </div>
+  </section>
+</section>

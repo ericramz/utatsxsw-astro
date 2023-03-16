@@ -1,6 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import SeeYouThere from "../components/see-you-there.astro"
+import MyKutxSection from "../components/my-kutx-section.astro"
+import ExpertPanelSection from "../components/expert-panel-section.astro"
+import BandsSection from "../components/bands-section.astro"
+import SessionsSection from "../components/sessions-section.astro"
+import LonghornBandSection from "../components/longhorn-band-section.astro"
 ---
 
 <Layout title="Home">
@@ -36,5 +41,12 @@ import SeeYouThere from "../components/see-you-there.astro"
       </p>
     </div>
   </section>
-  <SeeYouThere date="March 11, 2023" time="10 a.m. — 9 p.m." headline="See You There!" blurb="#UTatSXSW" />
+
+  <MyKutxSection />
+  <ExpertPanelSection />
+  <BandsSection />
+  <LonghornBandSection />
+  <SessionsSection />
+
+  <SeeYouThere image="../images/sxsw-hookem.svg" date="March 11, 2023" time="10 a.m. — 9 p.m." headline="See You There!" blurb="#UTatSXSW" />
 </Layout>

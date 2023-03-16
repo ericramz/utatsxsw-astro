@@ -7,6 +7,7 @@ module.exports = {
         22: "5.5rem"
       },
       backgroundImage: {
+        a: "url('/images/utsxsw-pattern-A.png')",
         c1: "url('/images/utsxsw-pattern-C1.png')",
         c2: "url('/images/utsxsw-pattern-C2.png')",
         c3: "url('/images/utsxsw-pattern-C3.png')",
